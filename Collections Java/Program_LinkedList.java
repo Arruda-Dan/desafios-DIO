@@ -10,9 +10,9 @@ public class Program_LinkedList {
 	public static void main(String[] args) {
 		
 		/*
-		 * Utilizar Métodos do linkedlist
+		 * Utilizar MÃ©todos do linkedlist
 		 * 1. Colocar todos elementos da ArrayList em uma nova lista
-		 * 2. Mostrar o primeiro elemento sem removê-lo
+		 * 2. Mostrar o primeiro elemento sem removÃª-lo
 		 * 3. Mostrar o primeiro elemento removendo-o
 		 */
 		
@@ -35,7 +35,7 @@ public class Program_LinkedList {
 		System.out.println(notas);
 		System.out.println(lista);
 		
-		//Mostrando o primeiro elemento sem removê-lo
+		//Mostrando o primeiro elemento sem removÃª-lo
 		System.out.println(lista.getFirst());
 		System.out.println(lista.getLast());
 		System.out.println(lista.peek());
