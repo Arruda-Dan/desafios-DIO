@@ -8,17 +8,17 @@ public class Desafio02_Listas {
 	/*
 	 * Proposta 02 - 
 	 * 
-	 * Utilizando listas, faÁa um programa que faÁa 5 perguntas para uma pessoa
-	 * sobre um crime. As perguntas s„o:
-	 * "Telefonou para a vÌtima?"
+	 * Utilizando listas, fa√ßa um programa que fa√ßa 5 perguntas para uma pessoa
+	 * sobre um crime. As perguntas s√£o:
+	 * "Telefonou para a v√≠tima?"
 	 * "Esteve no local do crime?"
-	 * "Mora perto da vÌtima?"
-	 * "Devia para a vÌtima?"
-	 * "J· trabalhou com a vÌtima?"
+	 * "Mora perto da v√≠tima?"
+	 * "Devia para a v√≠tima?"
+	 * "J√° trabalhou com a v√≠tima?"
 	 * 
-	 * Se a pessoa responder positivamente a 2 questıes ela deve ser classificada
-	 * como "Suspeita", entre 3 e 4 como "C˙mplice" e 5 como "Assassina". Caso
-	 * contr·rio, ela ser· classificado como "Inocente".
+	 * Se a pessoa responder positivamente a 2 quest√µes ela deve ser classificada
+	 * como "Suspeita", entre 3 e 4 como "C√∫mplice" e 5 como "Assassina". Caso
+	 * contr√°rio, ela ser√° classificado como "Inocente".
 	 */
 
 	public static void main(String[] args) {
@@ -26,10 +26,10 @@ public class Desafio02_Listas {
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US); 
 		
-		String[] questionario = {"Telefonou para a vÌtima?", "Esteve no local do crime?", "Mora perto da vÌtima?", 
-				"Devia para a vÌtima?",  "J· trabalhou com a vÌtima?"};
+		String[] questionario = {"Telefonou para a v√≠tima?", "Esteve no local do crime?", "Mora perto da v√≠tima?", 
+				"Devia para a v√≠tima?",  "J√° trabalhou com a v√≠tima?"};
 		
-		System.out.println("Para o question·rio a seguir, digite 'S' para as respostas afirmartivas e "
+		System.out.println("Para o question√°rio a seguir, digite 'S' para as respostas afirmartivas e "
 				+ "'N' para as repostas negativas");
 		System.out.println();
 		
@@ -39,7 +39,7 @@ public class Desafio02_Listas {
 			
 			String opcao = sc.next();
 			while (!opcao.equalsIgnoreCase("s") && !opcao.equalsIgnoreCase("n")) {
-				System.out.println("OpÁ„o inv·lida!");
+				System.out.println("Op√ß√£o inv√°lida!");
 				opcao = sc.next();
 			}
 			
@@ -52,7 +52,7 @@ public class Desafio02_Listas {
 			/* Opcao 02 */
 //			int opcao = sc.nextInt();
 //			while (opcao != 0 && opcao != 1 ) {
-//				System.out.println("OpÁ„o Inv·lida!!");
+//				System.out.println("Op√ß√£o Inv√°lida!!");
 //				opcao = sc.nextInt();
 //			}
 //			
@@ -63,7 +63,7 @@ public class Desafio02_Listas {
 		System.out.println();
 		if (soma < 2) System.out.println("Inocente!");
 		else if (soma == 2) System.out.println("Suspeito!");
-		else if (soma < 5) System.out.println("C˙mplice!");
+		else if (soma < 5) System.out.println("C√∫mplice!");
 		else System.out.println("Assassino!");
 		
 		System.out.println();
