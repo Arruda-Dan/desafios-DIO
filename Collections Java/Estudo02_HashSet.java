@@ -1,5 +1,6 @@
 package desafios.dio.collections.set;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -143,4 +144,15 @@ class Serie implements Comparable<Serie> {
 		return this.getNome().compareTo(serie.getNome());
 	}
 
+}
+
+//implementando.....
+class comparatorNomeGeneroEpisodio implements Comparator<Serie> {
+
+	@Override
+	public int compare(Serie s1, Serie s2) {
+		return 0;
+	}
+
+	
 }
