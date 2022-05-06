@@ -36,11 +36,20 @@ public class Estudo02_HashSet {
 
 		// ordem natural por tempo de episodio
 		Set<Serie> series3 = new TreeSet<>(series);
-		// erro ao imprimir assim... poid nao tá implementado o comparable na classe
-		// Serie
+		// erro ao imprimir assim... pois nao tá implementado o comparable na classe Serie
 //		System.out.println(series3);
 
 		for (Serie serie : series3) {
+			System.out.println(serie.getNome() + " - " + serie.getGenero() + " - " + serie.getTempoEEpisodio());
+		}
+		
+		System.out.println();
+		
+		//Teste com comparator
+		Set<Serie> series4 = new TreeSet<>(new comparatorNomeGeneroEpisodio());
+		//esse método recebe uma collection
+		series4.addAll(series);
+		for (Serie serie : series4) {
 			System.out.println(serie.getNome() + " - " + serie.getGenero() + " - " + serie.getTempoEEpisodio());
 		}
 
@@ -138,20 +147,23 @@ class Serie implements Comparable<Serie> {
 		int tempoEpisodio = Integer.compare(this.getTempoEEpisodio(), serie.tempoEEpisodio);
 		if (tempoEpisodio != 0)	return tempoEpisodio;
 		
-		int genero = this.getGenero().compareTo(serie.getGenero());
-		if (genero != 0) return genero;
-
-		return this.getNome().compareTo(serie.getNome());
+		return this.getGenero().compareTo(serie.getGenero());
 	}
 
 }
 
-//implementando.....
 class comparatorNomeGeneroEpisodio implements Comparator<Serie> {
 
 	@Override
 	public int compare(Serie s1, Serie s2) {
-		return 0;
+		int nome = s1.getNome().compareTo(s2.getNome());
+		if (nome != 0) return nome;
+		
+		int genero = s1.getGenero().compareTo(s2.getGenero());
+		if (genero != 0) return genero;
+		
+		return Integer.compare(s1.getTempoEEpisodio(), s2.getTempoEEpisodio());
+		
 	}
 
 	
