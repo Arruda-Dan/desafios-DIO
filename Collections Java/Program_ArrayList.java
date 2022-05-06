@@ -10,7 +10,7 @@ public class Program_ArrayList {
 	public static void main(String[] args) {
 		
 		/*
-		 * Desta forma o array fica limitado a essas informaÁıes, nao podendo adicionar novos dados
+		 * Desta forma o array fica limitado a essas informa√ß√µes, nao podendo adicionar novos dados
 		 * List<Double> notas1 = Arrays.asList(7d, 8.5, 9.3); 
 		 */
 		List<Double> notas = new ArrayList<>();
@@ -45,21 +45,21 @@ public class Program_ArrayList {
 		System.out.println(notas.get(2));
 		
 		//exibir maior e menor nota
-		//mÈtodo especifico do Collections
+		//m√©todo especifico do Collections
 		System.out.println(Collections.min(notas));
 		System.out.println(Collections.max(notas));
 		
-		//soma dos valores e mÈdia
-		//atalho para criaÁ„o de vari·veis ctrl + 2 + L
+		//soma dos valores e m√©dia
+		//atalho para cria√ß√£o de vari√°veis ctrl + 2 + L
 		Iterator<Double> iterator = notas.iterator();
-		Double sum = 0d; // tem que colocar o d apÛs o valor
+		Double sum = 0d; // tem que colocar o d ap√≥s o valor
 		while(iterator.hasNext()) {
 			Double next = iterator.next();
 			sum += next;
 		}
 		System.out.println(sum);
 		//size mosra a quantidade de elementos na lista
-		//mÈdia
+		//m√©dia
 		System.out.println(sum / notas.size());
 		
 		//remover = pode ser o elemento ou a posicao
@@ -79,7 +79,7 @@ public class Program_ArrayList {
 		notas.clear();
 		System.out.println(notas);
 		
-		//se a lista est· vazia = retorn boolean
+		//se a lista est√° vazia = retorn boolean
 		System.out.println(notas.isEmpty());
 		
 		
