@@ -10,12 +10,12 @@ public class Desafio01_Listas {
 	/*
 	 * Proposta 01 - 
 	 * 
-	 * Faça um programa que receba a temperatura média dos 6 primeiros meses do ano
+	 * FaÃ§a um programa que receba a temperatura mÃ©dia dos 6 primeiros meses do ano
 	 * e armazene-as em uma lista.
 	 * 
-	 * Após isto, calcule a média semestral das temperaturas e mostre todas as
-	 * temperaturas acima desta média, e em que mês elas ocorreram (mostrar o mês
-	 * por extenso: 1 – Janeiro, 2 – Fevereiro e etc).
+	 * ApÃ³s isto, calcule a mÃ©dia semestral das temperaturas e mostre todas as
+	 * temperaturas acima desta mÃ©dia, e em que mÃªs elas ocorreram (mostrar o mÃªs
+	 * por extenso: 1 â€“ Janeiro, 2 â€“ Fevereiro e etc).
 	 * 
 	 */
 
@@ -42,7 +42,7 @@ public class Desafio01_Listas {
 //		temps.add(28.4);
 //		temps.add(27.5);
 		
-		String[] meses = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"};
+		String[] meses = {"Janeiro", "Fevereiro", "MarÃ§o", "Abril", "Maio", "Junho"};
 		
 		System.out.println();
 		Double soma = 0d;
@@ -53,7 +53,7 @@ public class Desafio01_Listas {
 		
 		
 		System.out.println();
-		System.out.println("A média das temperaturas: " + soma / temps.size());
+		System.out.println("A mÃ©dia das temperaturas: " + soma / temps.size());
 		 
 		sc.close();
 
