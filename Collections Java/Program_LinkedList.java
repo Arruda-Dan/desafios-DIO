@@ -23,14 +23,15 @@ public class Program_LinkedList {
 		notas.add(5.5);
 		notas.add(4.0);
 		
-		LinkedList<Double> lista = new LinkedList<>();
-		
 		//Criando lista (LinkedList) a a partir da ArrayList
-		Iterator<Double> iterator = notas.iterator();
-		while (iterator.hasNext()) {
-			Double next = iterator.next();
-			lista.add(next);
-		}
+		LinkedList<Double> lista = new LinkedList<>(notas);
+		
+		// Dessa forma ele ia ler todos os elementos da Array e adicionando ao LinkedList
+//		Iterator<Double> iterator = notas.iterator();
+//		while (iterator.hasNext()) {
+//			Double next = iterator.next();
+//			lista.add(next);
+//		}
 		
 		System.out.println(notas);
 		System.out.println(lista);
