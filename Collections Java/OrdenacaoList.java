@@ -16,7 +16,7 @@ public class OrdenacaoList {
 		gatos.add(new Gato("Ze", 20, "amarelo"));
 		
 		//ordem de insercao
-		//List sempre mostra a ordenação pela ordem de insercao
+		//List sempre mostra a ordenaÃ§Ã£o pela ordem de insercao
 		System.out.println(gatos);
 		
 		//ordem aleatoria
@@ -95,7 +95,7 @@ class Gato implements Comparable<Gato> {
 				"}";
 	}
 
-	//sobrescrever método
+	//sobrescrever mÃ©todo
 	@Override
 	public int compareTo(Gato gato) {
 		return this.getNome().compareToIgnoreCase(gato.getNome());
