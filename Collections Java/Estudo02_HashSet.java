@@ -11,9 +11,9 @@ public class Estudo02_HashSet {
 	public static void main(String[] args) {
 
 		Set<Serie> series = new HashSet<>();
-		series.add(new Serie("GOT", "Drama", 60));
+		series.add(new Serie("Breaking Bad", "Policial", 60));
 		series.add(new Serie("Dark", "Drama", 60));
-		series.add(new Serie("That '70s show", "Comédia", 25));
+		series.add(new Serie("The Big Bang Theory", "Comédia", 25));
 
 		// ordem aleatoria
 		for (Serie serie : series) {
@@ -24,9 +24,9 @@ public class Estudo02_HashSet {
 
 		// ordem de insercao
 		Set<Serie> series2 = new LinkedHashSet<>();
-		series2.add(new Serie("GOT", "Fantasia", 60));
+		series2.add(new Serie("Breaking Bad", "Policial", 60));
 		series2.add(new Serie("Dark", "Drama", 60));
-		series2.add(new Serie("That '70s show", "Comédia", 25));
+		series2.add(new Serie("The Big Bang Theory", "Comédia", 25));
 
 		for (Serie serie : series2) {
 			System.out.println(serie.getNome() + " - " + serie.getGenero() + " - " + serie.getTempoEEpisodio());
